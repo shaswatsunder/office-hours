@@ -279,3 +279,124 @@ Greetings, my masters call me C-3PO.
 We have 2 robots.
 
 
+
+
+____________________
+
+now contains my failed attempt to push the repo to github!
+
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~ $ cd Desktop
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop $ ls
+adt-bundle-linux-x86_64-20140321  lesson_2      mozilla.pdf
+git tu                            mozilla1.pdf  wrangle1.py
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop $ mkdir office-hours
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop $ cd office-hours/
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ ls
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ cd ..
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop $ mv git\ tu office-hours/
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop $ ls
+adt-bundle-linux-x86_64-20140321  mozilla1.pdf  office-hours
+lesson_2                          mozilla.pdf   wrangle1.py
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop $ cd office-hours/
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ ls
+git tu
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git init
+Initialized empty Git repository in /home/anurag/Desktop/office-hours/.git/
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ ls
+git tu
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ ls -a
+.  ..  .git  git tu
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git status
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	git tu
+nothing added to commit but untracked files present (use "git add" to track)
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git log
+fatal: bad default revision 'HEAD'
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git commit
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	git tu
+nothing added to commit but untracked files present (use "git add" to track)
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git add git\ tu
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   git tu
+#
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git commit
+[master (root-commit) bb60051] initial commit; just to save things!
+ 1 file changed, 193 insertions(+)
+ create mode 100644 git tu
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git status
+# On branch master
+nothing to commit, working directory clean
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git log
+commit bb60051fad5928788080b44bb83aa1d469898fbd
+Author: anurag <anurag.fadia@gmail.com>
+Date:   Fri May 16 22:56:41 2014 +0530
+
+    initial commit; just to save things!
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ gedit git\ tu anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   git tu
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git commit
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   git tu
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git add git\ tu
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git commit
+[master 83941a2] added object orientation details
+ 1 file changed, 88 insertions(+)
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git log
+commit 83941a2e2dc984b4ed92435f00da5247f0559905
+Author: anurag <anurag.fadia@gmail.com>
+Date:   Fri May 16 23:00:01 2014 +0530
+
+    added object orientation details
+
+commit bb60051fad5928788080b44bb83aa1d469898fbd
+Author: anurag <anurag.fadia@gmail.com>
+Date:   Fri May 16 22:56:41 2014 +0530
+
+    initial commit; just to save things!
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git stauta
+git: 'stauta' is not a git command. See 'git --help'.
+
+Did you mean this?
+	status
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git status
+# On branch master
+nothing to commit, working directory clean
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ gedit git\ tu anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git remote add origin https://github.com/abnth/office-hours.git
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git push -u origin master
+fatal: unable to access 'https://github.com/abnth/office-hours.git/': gnutls_handshake() failed: An unexpected TLS packet was received.
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ 
+
+
