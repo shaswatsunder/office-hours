@@ -1,0 +1,193 @@
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~ $ cd ~
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~ $ ls
+Desktop    lesson_4  Pictures   project_4     Templates
+Documents  lesson_5  project_1  project_5     Videos
+Downloads  __MACOSX  project_2  Public        workspace
+lesson_3   Music     project_3  summerintern  wrangle1.py.save
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~ $ mkdiir octo-pro
+No command 'mkdiir' found, did you mean:
+ Command 'mkdir' from package 'coreutils' (main)
+mkdiir: command not found
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~ $ mkdir octo-pro
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~ $ cd octo-pro/
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ ls
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ gedit main.py
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ gedit octo.py
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ ls
+octo.py
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ python octo.py
+Hello octo
+Hello octo
+Hello octo
+Hello octo
+Hello octo
+Hello octo
+Hello octo
+Hello octo
+Hello octo
+Hello octo
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ git init
+Initialized empty Git repository in /home/anurag/octo-pro/.git/
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ ls
+octo.py
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ ls -al
+total 16
+drwxr-xr-x  3 anurag anurag 4096 May 16 15:02 .
+drwxr-xr-x 41 anurag anurag 4096 May 16 14:59 ..
+drwxr-xr-x  7 anurag anurag 4096 May 16 15:02 .git
+-rw-r--r--  1 anurag anurag   40 May 16 15:01 octo.py
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ ls -a
+.  ..  .git  octo.py
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ sudo powertop
+[sudo] password for anurag: 
+Loaded 1 prior measurements
+Cannot load from file /var/cache/powertop/saved_parameters.powertop
+RAPL device for cpu 0
+RAPL device for cpu 0
+RAPL device for cpu 0
+Cannot load from file /var/cache/powertop/saved_parameters.powertop
+Leaving PowerTOP
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ git status
+# On branch master
+#
+# Initial commit
+#
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	octo.py
+nothing added to commit but untracked files present (use "git add" to track)
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ git add octo.py
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ git status
+# On branch master
+#
+# Initial commit
+#
+# Changes to be committed:
+#   (use "git rm --cached <file>..." to unstage)
+#
+#	new file:   octo.py
+#
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ git commit -m "working project. or initial commit"
+[master (root-commit) 89f3e73] working project. or initial commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 octo.py
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ git status
+# On branch master
+nothing to commit, working directory clean
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ git log
+commit 89f3e7383f360833bbdc57377463aa56899e944b
+Author: anurag <anurag.fadia@gmail.com>
+Date:   Fri May 16 15:06:37 2014 +0530
+
+    working project. or initial commit
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ gedit octo.py 
+.git/    octo.py  
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ gedit octo.py
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   octo.py
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ 
+
+
+
+
+
+
+______________________
+
+
+git commit -m "working project. or initial commit"
+[master (root-commit) 89f3e73] working project. or initial commit
+ 1 file changed, 2 insertions(+)
+ create mode 100644 octo.py
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ git status
+# On branch master
+nothing to commit, working directory clean
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ git log
+commit 89f3e7383f360833bbdc57377463aa56899e944b
+Author: anurag <anurag.fadia@gmail.com>
+Date:   Fri May 16 15:06:37 2014 +0530
+
+    working project. or initial commit
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ gedit octo.py 
+.git/    octo.py  
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ gedit octo.py
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ git status
+# On branch master
+# Changes not staged for commit:
+#   (use "git add <file>..." to update what will be committed)
+#   (use "git checkout -- <file>..." to discard changes in working directory)
+#
+#	modified:   octo.py
+#
+no changes added to commit (use "git add" and/or "git commit -a")
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ git add -u octo.py
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ git statis
+git: 'statis' is not a git command. See 'git --help'.
+
+Did you mean this?
+	status
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ git status
+# On branch master
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	modified:   octo.py
+#
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ git commit
+[master 99f7549] implemented a function definition.
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/octo-pro $ 
+
+__________________
+
+new repo
+same repo name
+add a description if you want
+click on create repo
+
+now on the terminal:
+git remote add origin https://github.com/abnth/octo-pro.git
+
+origin is the shortname of the github url
+
+
+git remote -v
+
+to see the remote sever list available(github is not the only repo available)
+
+to push the file
+git push -u origin master
+
+will ask for you uname and password and then push the changes to github
+
+on github you can see the commit history
+
+
+
+
+_______________
+
+
+branching
+and merging
+
+
+for contibutng to others fork their code
+
+
+git clone : copy gothub to local machine where as branching was on the server itself
+
+create a new repo and atleast do 5 commits.
+
+python official documentation. and oop side of python (byte of python)
+
+python django tutorial follow
+
