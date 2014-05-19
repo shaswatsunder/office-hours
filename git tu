@@ -398,5 +398,33 @@ anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ gedit git\ tu 
 anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ git push -u origin master
 fatal: unable to access 'https://github.com/abnth/office-hours.git/': gnutls_handshake() failed: An unexpected TLS packet was received.
 anurag@anurag-HP-Pavilion-g6-Notebook-PC ~/Desktop/office-hours $ 
+----------------------------------------------------------------------------------
+
+mitali@aakash:~$ git clone https://github.com/shaswatsunder/office-hours.git
+Cloning into 'office-hours'...
+remote: Counting objects: 9, done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 9 (delta 2), reused 9 (delta 2)
+Unpacking objects: 100% (9/9), done.
+Checking connectivity... done.
+mitali@aakash:~$ cd office-hours/
+mitali@aakash:~/office-hours$ git log 
+commit cfb97c1fe944420c83f94e73a4378432d12aaa3b
+Author: anurag <anurag.fadia@gmail.com>
+Date:   Fri May 16 23:04:51 2014 +0530
+
+    added screentext of trying to push the repo! :(
+
+commit 83941a2e2dc984b4ed92435f00da5247f0559905
+Author: anurag <anurag.fadia@gmail.com>
+Date:   Fri May 16 23:00:01 2014 +0530
+
+    added object orientation details
+
+commit bb60051fad5928788080b44bb83aa1d469898fbd
+Author: anurag <anurag.fadia@gmail.com>
+Date:   Fri May 16 22:56:41 2014 +0530
+
+    initial commit; just to save things!
 
 
